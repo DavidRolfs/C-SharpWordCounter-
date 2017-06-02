@@ -4,7 +4,7 @@ using System.Diagnostics;
 using SentenceTest;
 using System;
 
-namespace Sentence.Objects
+namespace WordCounter.Objects
 {
   public class RepeatCounter
   {
@@ -38,7 +38,7 @@ namespace Sentence.Objects
 
       string word = _word.ToLower();
       word = word.Replace("!", "").Replace(".", "").Replace(",", "").Replace("?", "");
-      
+
       _counter = 0;
       string[] sentenceArray = sentence.Split();
 

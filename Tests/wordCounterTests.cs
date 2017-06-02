@@ -1,7 +1,7 @@
 using Xunit;
 using System;
 using System.Collections.Generic;
-using Sentence.Objects;
+using WordCounter.Objects;
 
 namespace SentenceTest
 {
