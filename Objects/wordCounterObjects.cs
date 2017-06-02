@@ -31,5 +31,19 @@ namespace Sentence.Objects
       Console.WriteLine(array);
       return array.Length;
     }
+    public int CountRepeats()
+    {
+      _counter = 0;
+      string[] sentenceArray = _sentence.Split();
+
+      for(int i = 0; i < sentenceArray.Length; i++)
+      {
+        if(_word == sentenceArray[i])
+        {
+          _counter ++;
+        }
+      }
+      return _counter;
+    }
   }
 }

@@ -33,7 +33,7 @@ namespace SentenceTest
     public void CountRepeats_SplitSentenceIntoArray_returnWordCount()
     {
       RepeatCounter testRC = new RepeatCounter("hello", "hello world");
-      Assert.Equal(1, testRC.CountRepeats();
+      Assert.Equal(1, testRC.CountRepeats());
     }
   }
 }
