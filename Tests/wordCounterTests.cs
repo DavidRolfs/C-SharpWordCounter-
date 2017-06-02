@@ -49,5 +49,12 @@ namespace SentenceTest
       RepeatCounter testRC = new RepeatCounter("hello", "HeLlo world hELLo");
       Assert.Equal(2, testRC.CountRepeats());
     }
+    //Spec 7 Test
+    [Fact]
+    public void CountRepeats_IgnoresCapitlizationForWord_return2()
+    {
+      RepeatCounter testRC = new RepeatCounter("Hello", "Hello world hello");
+      Assert.Equal(2, testRC.CountRepeats());
+    }
   }
 }
