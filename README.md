@@ -5,15 +5,15 @@
 #### By _**David Rolfs**_
 
 ## Description
-
-
+Root page displays two inputs. One for a sentence and another for a word. The application runs a method that counts the amount of time that single word was used in the sentence.
 
 ## Setup/Installation Requirements
 
-* Go to Github repository page https://github.com/DavidRolfs/
+* Go to Github repository page https://github.com/DavidRolfs/C-SharpWordCounter-
 * Click the "download or clone" button and copy the link.
 * In your computers terminal type "git clone" & paste the copied link.
-* Once downloaded enter dnx kestrel into your teminal.
+* Once downloaded enter dnu restore into the terminal.
+* Then enter dnx kestrel into the terminal.
 * Open web browser of your choice and go to http://localhost:5004/ to view root page.
 
 ## Specs
@@ -28,8 +28,6 @@
 | Method will ignore capitalization differences for word| single: "Hello" sentence: "Hello world hello" | 2 |
 | Program will ignore punctuation | "hello", "hello world hello!" | 2 |
 
-## Known Bugs
-none
 
 ## Support and contact details
 
