@@ -24,7 +24,8 @@
 | A method takes the sentence and splits it into any array by each word | "hello world" | ["hello", "world"] |
 | A method will loop through the array and will return how many times the individual word was used in the sentence. | single word: "hello", sentence: "hello world" | 1 |
 | The method will count if the word was used multiple times | "hello world hello" | 2 |
-| Method will ignore capitalization differences | single: "hello" sentence: "HeLlo world hELLo" | 2 |
+| Method will ignore capitalization differences for sentences| single: "hello" sentence: "HeLlo world hELLo" | 2 |
+| Method will ignore capitalization differences for word| single: "Hello" sentence: "Hello world hello" | 2 |
 | Program will ignore punctuation | "hello", "hello world hello!" | 2 |
 
 ## Known Bugs
