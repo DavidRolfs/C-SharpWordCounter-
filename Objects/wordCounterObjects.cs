@@ -34,7 +34,11 @@ namespace Sentence.Objects
     public int CountRepeats()
     {
       string sentence = _sentence.ToLower();
+      sentence = sentence.Replace("!", "").Replace(".", "").Replace(",", "").Replace("?", "");
+
       string word = _word.ToLower();
+      word = word.Replace("!", "").Replace(".", "").Replace(",", "").Replace("?", "");
+      
       _counter = 0;
       string[] sentenceArray = sentence.Split();
 
