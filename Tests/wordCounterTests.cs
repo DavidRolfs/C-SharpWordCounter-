@@ -28,5 +28,12 @@ namespace SentenceTest
       RepeatCounter testRC = new RepeatCounter("hello", "hello world");
       Assert.Equal(2, testRC.SplitSentence());
     }
+    //Spec 4 Test
+    [Fact]
+    public void CountRepeats_SplitSentenceIntoArray_returnWordCount()
+    {
+      RepeatCounter testRC = new RepeatCounter("hello", "hello world");
+      Assert.Equal(1, testRC.CountRepeats();
+    }
   }
 }
