@@ -17,7 +17,7 @@ namespace SentenceTest
     public void GetSentence_ForSentenceEntered_returnSentence()
     {
       RepeatCounter testRC = new RepeatCounter("hello", "hello world");
-      Assert.Equal("hello", testRC.GetSentence());
+      Assert.Equal("hello world", testRC.GetSentence());
     }
   }
 }

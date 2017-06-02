@@ -20,5 +20,9 @@ namespace Sentence.Objects
     {
       return _word;
     }
+    public string GetSentence()
+    {
+      return _sentence;
+    }
   }
 }
