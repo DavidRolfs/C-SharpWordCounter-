@@ -16,5 +16,9 @@ namespace Sentence.Objects
       _word = word;
       _sentence = sentence;
     }
+    public string GetWord()
+    {
+      return _word;
+    }
   }
 }
