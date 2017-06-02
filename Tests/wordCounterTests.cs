@@ -13,5 +13,11 @@ namespace SentenceTest
       RepeatCounter testRC = new RepeatCounter("hello", "hello world");
       Assert.Equal("hello", testRC.GetWord());
     }
+    [Fact]
+    public void GetSentence_ForSentenceEntered_returnSentence()
+    {
+      RepeatCounter testRC = new RepeatCounter("hello", "hello world");
+      Assert.Equal("hello", testRC.GetSentence());
+    }
   }
 }
