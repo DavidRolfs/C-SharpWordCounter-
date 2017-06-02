@@ -19,5 +19,11 @@ namespace SentenceTest
       RepeatCounter testRC = new RepeatCounter("hello", "hello world");
       Assert.Equal("hello world", testRC.GetSentence());
     }
+    [Fact]
+    public void SplitSentence_SplitSentenceIntoAnArray_returnArrayLength()
+    {
+      RepeatCounter testRC = new RepeatCounter("hello", "hello world");
+      Assert.Equal(2, testRC.SplitSentence());
+    }
   }
 }
