@@ -2,6 +2,7 @@ using Nancy;
 using System.Collections.Generic;
 using System.Diagnostics;
 using SentenceTest;
+using System;
 
 namespace Sentence.Objects
 {
@@ -23,6 +24,12 @@ namespace Sentence.Objects
     public string GetSentence()
     {
       return _sentence;
+    }
+    public int SplitSentence()
+    {
+      string[] array = _sentence.Split();
+      Console.WriteLine(array);
+      return array.Length;
     }
   }
 }
