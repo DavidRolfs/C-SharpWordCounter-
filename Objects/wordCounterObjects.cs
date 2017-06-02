@@ -33,8 +33,9 @@ namespace Sentence.Objects
     }
     public int CountRepeats()
     {
+      string sentence = _sentence.ToLower();
       _counter = 0;
-      string[] sentenceArray = _sentence.Split();
+      string[] sentenceArray = sentence.Split();
 
       for(int i = 0; i < sentenceArray.Length; i++)
       {
