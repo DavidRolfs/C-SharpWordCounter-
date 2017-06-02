@@ -34,12 +34,13 @@ namespace Sentence.Objects
     public int CountRepeats()
     {
       string sentence = _sentence.ToLower();
+      string word = _word.ToLower();
       _counter = 0;
       string[] sentenceArray = sentence.Split();
 
       for(int i = 0; i < sentenceArray.Length; i++)
       {
-        if(_word == sentenceArray[i])
+        if(word == sentenceArray[i])
         {
           _counter ++;
         }
