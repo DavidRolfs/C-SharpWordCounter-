@@ -1,7 +1,16 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<h2>Word Checker</h2>
+
 <form action="/results" method="post">
-  <label>Enter a Word</label>
-  <input type="text" name="word">
-  <label>Enter a sentence</label>
-  <input type="text" name="sentence">
-  <button type="submit">Submit</button>
+  <div class="form-group">
+    <label>Enter a sentence</label>
+    <input class="form-control" type="text" name="sentence">
+    <label>Enter a Word</label>
+    <input class="form-control" type="text" name="word">
+    <h3> Hit submit and see how many times the inputed word was used</h3>
+    <button class="btn" type="submit">Submit</button>
+  </div>
 </form>

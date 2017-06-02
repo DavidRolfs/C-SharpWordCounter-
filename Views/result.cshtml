@@ -1,3 +1,8 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+
 Word: @Model.GetWord()
 
 <br>
@@ -6,8 +11,7 @@ Sentence: @Model.GetSentence()
 
 <br>
 
-Time @Model.GetWord() was used: @Model.CountRepeats()
+Times used: @Model.CountRepeats()
 
 <br>
-
 <a href="/">try another</a>
