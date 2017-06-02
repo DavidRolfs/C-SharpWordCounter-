@@ -28,7 +28,6 @@ namespace WordCounter.Objects
     public int SplitSentence()
     {
       string[] array = _sentence.Split();
-      Console.WriteLine(array);
       return array.Length;
     }
     public int CountRepeats()
