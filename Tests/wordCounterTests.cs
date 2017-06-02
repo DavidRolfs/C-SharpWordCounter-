@@ -35,5 +35,12 @@ namespace SentenceTest
       RepeatCounter testRC = new RepeatCounter("hello", "hello world");
       Assert.Equal(1, testRC.CountRepeats());
     }
+    //Spec 5 Test
+    [Fact]
+    public void CountRepeats_CountWordMultipleTimes_return2()
+    {
+      RepeatCounter testRC = new RepeatCounter("hello", "hello world hello");
+      Assert.Equal(2, testRC.CountRepeats());
+    }
   }
 }
